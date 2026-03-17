@@ -8,6 +8,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::view('dashboard', 'dashboard')->name('dashboard');
 });
 
-Route::livewire('/test', 'pages::test')->name('test');
+Route::livewire('/mary', 'pages::maryUI')->name('maryUI');
+Route::livewire('/daisy', 'pages::daisyUI')->name('daisyUI');
 
 require __DIR__.'/settings.php';

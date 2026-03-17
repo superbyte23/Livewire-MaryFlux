@@ -99,4 +99,14 @@ new class extends Component
     {{-- You can use any `$wire.METHOD` on `@row-click` --}}
     <x-mary-table :headers="$headers" :rows="$users" striped @row-click="alert($event.detail.name)" />
 
+    <flux:separator class="my-5" />
+
+    <flux:skeleton.group animate="shimmer">
+        <flux:skeleton.line class="mb-2 w-1/4" />
+        <flux:skeleton.line />
+        <flux:skeleton.line />
+        <flux:skeleton.line class="w-3/4" />
+    </flux:skeleton.group>
+    
+
 </div>

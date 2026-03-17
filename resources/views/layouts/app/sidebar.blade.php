@@ -16,8 +16,11 @@
                     <flux:sidebar.item icon="home" :href="route('dashboard')" :current="request()->routeIs('dashboard')" wire:navigate>
                         {{ __('Dashboard') }}
                     </flux:sidebar.item>
-                    <flux:sidebar.item icon="home" :href="route('test')" :current="request()->routeIs('test')" wire:navigate>
-                        {{ __('Test') }}
+                    <flux:sidebar.item icon="home" :href="route('maryUI')" :current="request()->routeIs('maryUI')" wire:navigate>
+                        {{ __('MaryUI') }}
+                    </flux:sidebar.item>
+                <flux:sidebar.item icon="home" :href="route('daisyUI')" :current="request()->routeIs('daisyUI')" wire:navigate>
+                        {{ __('DaisyUI') }}
                     </flux:sidebar.item>
                 </flux:sidebar.group>
             </flux:sidebar.nav>
@@ -91,6 +94,8 @@
                 </flux:menu>
             </flux:dropdown>
         </flux:header>
+
+        
 
         {{ $slot }}
 
